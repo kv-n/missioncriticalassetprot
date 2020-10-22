@@ -11,6 +11,11 @@
     background: #fff;
     z-index: 1000;
 
+    a:link, a:visited {
+        text-decoration: none;
+        color: #000;
+    }
+
     &__logo {
         width: 17rem;
         margin-left: 2rem;
@@ -23,12 +28,14 @@
     &__list {
         background: #fff;
         margin-right: 2rem;
+        font-size: 1.3rem;
+        text-transform: uppercase;
     }
 
     &__list ul {
         display: flex;
         justify-content: space-between;
-        width: 18rem;
+        width: 25rem;
         margin: 0;
 
         li {
@@ -39,10 +46,18 @@
         .nav-dropdown-target {
             position: relative;
 
+            &::after {
+                content: '\203A';
+                position: absolute;
+                right: -.9rem;
+                top:.1rem;
+                transform: rotate(90deg);
+            }
+
             .nav-dropdown {
                 position: absolute;
-                left: 20rem;
-                top: 1.3rem;
+                left: 25rem;
+                top: 1.6rem;
                 width: 15rem;
                 padding: 1rem;
                 display: flex;

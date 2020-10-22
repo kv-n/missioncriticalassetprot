@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import '../../sass/_nav.scss'
 
+import { Link } from 'react-router-dom'
+
 import logo from '../../assets/images/logo.png'
 
 const Nav = () => {
@@ -21,7 +23,7 @@ const Nav = () => {
                         </ul>
                     </li>
                     <li>Services</li>
-                    <li>Contact</li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
             <div className={`hamburger ${isOpen ? "open" : "" }`} onClick={() => setIsOpen(!isOpen)}>
@@ -41,7 +43,7 @@ const Nav = () => {
                         <hr />
                         <li>Services</li>
                         <hr />
-                        <li>Contact</li>
+                        <li><Link to="/contact">Contact</Link></li>
                         <hr />
                     </ul>
                 </div>
