@@ -90,25 +90,25 @@
             top: 24px;
         }
         .open > & {
-            transition: all .30s ease-in-out;
+            transition: all .5s ease-in-out;
         }
     
         .open > &:first-child {
             top: .7rem;
             transform: rotate(135deg);
-            transition: all .30s ease-in-out;
+            transition: all .5s ease-in-out;
         }
     
         .open > &:nth-child(2) {
             opacity: 0;
             bottom: -60px;
-            transition: all .30s ease-in-out;
+            transition: all .5s ease-in-out;
         }
     
         .open > &:nth-child(3) {
             top: .7rem;
             transform: rotate(-135deg);
-            transition: all .30s ease-in-out;
+            transition: all .5s ease-in-out;
         }
     }
 }
@@ -122,15 +122,54 @@
     background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     z-index: 2;
     transition: top .5s ease-in-out;
+
+    &__list {
+        margin-top: 5rem;
+        
+        ul {
+            padding: 0;
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+    }
 
     &.show {
         top: 0;
     }
     
+    .overlay-dropdown-trigger {
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: "\203A";
+            position: absolute;
+            left: 8rem;
+            top: 0;
+        }
+
+        &.active::after {
+            content: "\203A";
+            position: absolute;
+            left: 8rem;
+            top: .2rem;
+            transform: rotate(90deg);
+        }
+
+        .overlay-dropdown-visible {
+            opacity: 1;
+            height: initial;
+            margin-top: .5rem;
+        }
+
+        .overlay-dropdown-hidden {
+            opacity: 0;
+            height: 0;
+        }
+    }
+
     ul {
         li {
             list-style: none;
@@ -139,7 +178,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     .nav {
         &__list {

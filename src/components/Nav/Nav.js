@@ -5,6 +5,7 @@ import logo from '../../assets/images/logo.png'
 
 const Nav = () => {
     const [ isOpen, setIsOpen ] = useState(false)
+    const [ dropdown, setDropdown ] = useState(false)
     return (
         <>
         <div className="nav">
@@ -31,14 +32,17 @@ const Nav = () => {
             <div className={`overlay ${isOpen ? "show" : ""}`}>
                 <div className="overlay__list">
                     <ul>
-                        <li>Systems
-                            <ul>
+                        <li className={`overlay-dropdown-trigger ${dropdown ? "active" : ""}`} onClick={() => setDropdown(!dropdown)}>Systems
+                            <ul className={`${dropdown ? "overlay-dropdown-visible" : "overlay-dropdown-hidden"}`}>
                                 <li>Fire Systems</li>
                                 <li>Water Systems</li>
                             </ul>
                         </li>
+                        <hr />
                         <li>Services</li>
+                        <hr />
                         <li>Contact</li>
+                        <hr />
                     </ul>
                 </div>
             </div>
