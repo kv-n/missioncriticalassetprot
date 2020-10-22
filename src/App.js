@@ -1,4 +1,5 @@
 import React from 'react';
+import './sass/_base.scss'
 
 import Nav from './components/Nav/Nav'
 
