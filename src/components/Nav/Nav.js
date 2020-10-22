@@ -12,7 +12,7 @@ const Nav = () => {
         <>
         <div className="nav">
             <div className="nav__logo">
-                <img src={logo} alt="Mission Critical Asset Protection | Logo" />
+                <Link to="/"><img src={logo} alt="Mission Critical Asset Protection | Logo" /></Link>
             </div>
             <div className="nav__list">
                 <ul>
