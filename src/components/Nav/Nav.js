@@ -18,8 +18,8 @@ const Nav = () => {
                 <ul>
                     <li className="nav-dropdown-target">Systems
                         <ul className="nav-dropdown">
-                            <li>Fire Systems</li>
-                            <li>Water Systems</li>
+                            <li><Link to="/fire-systems">Fire Systems</Link></li>
+                            <li><Link to="/water-systems">Water Systems</Link></li>
                         </ul>
                     </li>
                     <li><Link to="/services">Services</Link></li>
@@ -36,8 +36,8 @@ const Nav = () => {
                     <ul>
                         <li className={`overlay-dropdown-trigger ${dropdown ? "active" : ""}`} onClick={() => setDropdown(!dropdown)}>Systems
                             <ul className={`${dropdown ? "overlay-dropdown-visible" : "overlay-dropdown-hidden"}`}>
-                                <li>Fire Systems</li>
-                                <li>Water Systems</li>
+                                <li><Link to="/fire-systems">Fire Systems</Link></li>
+                                <li><Link to="/water-systems">Water Systems</Link></li>
                             </ul>
                         </li>
                         <hr />
