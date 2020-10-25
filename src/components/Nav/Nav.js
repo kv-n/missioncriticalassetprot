@@ -22,7 +22,7 @@ const Nav = () => {
                             <li>Water Systems</li>
                         </ul>
                     </li>
-                    <li>Services</li>
+                    <li><Link to="/services">Services</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@ const Nav = () => {
                             </ul>
                         </li>
                         <hr />
-                        <li>Services</li>
+                        <li><Link to="/services">Services</Link></li>
                         <hr />
                         <li><Link to="/contact">Contact</Link></li>
                         <hr />
