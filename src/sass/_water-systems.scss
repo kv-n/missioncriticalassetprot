@@ -13,6 +13,7 @@
         background-size: cover;
         background-attachment: fixed;
         position: relative;
+        animation: fade .4s ease-in-out;
 
         &::after {
             content: '';
@@ -75,6 +76,15 @@
             }
         }
 
+        .water-systems-burb {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0;
+        }
+
         .visible {
             display: block;
             background: #4F55BF;
@@ -93,7 +103,19 @@
     .water-system {
         &__body {
             width: 85%;
+
+            button {
+                width: 90%;
+            }
         }
     }
+}
 
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

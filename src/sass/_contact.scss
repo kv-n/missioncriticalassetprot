@@ -3,10 +3,20 @@
     height: 100vh;
     position: relative;
     margin-top: 8rem;
+    animation: fade .4s ease-in-out;
 
     h1 {
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 2px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
