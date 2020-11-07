@@ -97,16 +97,21 @@
         }
 
         .visible {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            height: 100%;
             padding: 1rem;
             color: #000;
             border: 1px solid #000;
             width: 30rem;
             overflow: scroll;
+            transition: opacity .5s ease-in-out;
         }
 
         .hidden {
-            display: none;
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
         }
     }
 }
