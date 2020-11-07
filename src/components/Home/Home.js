@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../sass/_home.scss'
 
+import { Link } from 'react-router-dom'
+
 import homeAbout from '../../assets/images/home-about/home-about.jpg'
 
 const Home = () => {
@@ -27,7 +29,7 @@ const Home = () => {
                         <p>From retrofitting an existing system, to building from the ground up, MCAP can provide options for all of your fire alarm and fire suppression needs.</p>
                     </div>
                 </div>
-                <button>Learn More</button>
+                <button><Link to="/services">Learn More</Link></button>
             </div>
             <div className="home__about">
                 <h1 className="home__header">About Us</h1>
@@ -37,6 +39,7 @@ const Home = () => {
                     </div>
                     <div className="home__about-text">
                         <p>After spending years working at other companies in the industry, Eric Behar decided to take all of his knowledge and expertise gained to found his own company with a client first attitude. MCAP, Inc., A veteran owned company, is quickly becoming an industry leader in Southern California; specializing in Critical Infrastructure special hazard protection. From design, to installation, to maintenance; allow MCAP to become your trusted partner for all of your fire and life safety needs.</p>
+                        <p>MCAP, Inc., A veteran owned company, is quickly becoming an industry leader in Southern California; specializing in Critical Infrastructure special hazard protection. From design, to installation, to maintenance; allow MCAP to become your trusted partner for all of your fire and life safety needs.</p>
                     </div>
                 </div>
             </div>

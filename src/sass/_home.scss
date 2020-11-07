@@ -79,6 +79,20 @@
             letter-spacing: 2px;
             font-size: 1.2rem;
             cursor: pointer;
+
+            a:link, a:visited {
+                text-decoration: none;
+                color: #000;
+            }
+
+            &:hover {
+                background: #000;
+
+                a:link, a:visited {
+                    color: #fff;
+                }
+
+            }
         }
     }
 
@@ -100,6 +114,10 @@
                 img {
                     width: 100%;
                 }
+            }
+
+            p:nth-child(1) {
+                margin-top: 0;
             }
     
             .home__about-text {
