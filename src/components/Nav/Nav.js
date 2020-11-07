@@ -36,14 +36,14 @@ const Nav = () => {
                     <ul>
                         <li className={`overlay-dropdown-trigger ${dropdown ? "active" : ""}`} onClick={() => setDropdown(!dropdown)}>Systems
                             <ul className={`${dropdown ? "overlay-dropdown-visible" : "overlay-dropdown-hidden"}`}>
-                                <li><Link to="/fire-systems">Fire Systems</Link></li>
-                                <li><Link to="/water-systems">Water Systems</Link></li>
+                                <li onClick={() => setIsOpen(!isOpen)}><Link to="/fire-systems">Fire Systems</Link></li>
+                                <li onClick={() => setIsOpen(!isOpen)}><Link to="/water-systems">Water Systems</Link></li>
                             </ul>
                         </li>
                         <hr />
-                        <li><Link to="/services">Services</Link></li>
+                        <li onClick={() => setIsOpen(!isOpen)}><Link to="/services">Services</Link></li>
                         <hr />
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li onClick={() => setIsOpen(!isOpen)}><Link to="/contact">Contact</Link></li>
                         <hr />
                     </ul>
                 </div>
