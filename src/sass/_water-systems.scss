@@ -122,6 +122,10 @@
         &__body {
             width: 85%;
 
+            .visible {
+                width: 100%;
+            }
+
             button {
                 width: 90%;
             }
