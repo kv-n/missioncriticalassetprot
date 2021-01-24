@@ -7,7 +7,8 @@ const Contact = () => {
     return (
         <div className="contact">
             <h1>Contact</h1>
-            <ContactForm />
+            <p style={{textAlign: "center"}}>Please email adrian.lonick@mcapfiresystems.com</p>
+            {/* <ContactForm /> */}
         </div>
     )
 }
