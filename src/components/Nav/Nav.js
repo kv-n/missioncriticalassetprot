@@ -18,7 +18,7 @@ const Nav = () => {
                 <ul>
                     <li className="nav-dropdown-target">Systems
                         <ul className="nav-dropdown">
-                            <li><Link to="/missioncriticalassetprotfire-systems">Alarms</Link></li>
+                            <li><Link to="/missioncriticalassetprot/fire-systems">Alarms</Link></li>
                             <li><Link to="/missioncriticalassetprot/water-systems">Suppression</Link></li>
                         </ul>
                     </li>
