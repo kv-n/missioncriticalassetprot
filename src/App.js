@@ -17,10 +17,10 @@ function App() {
       <Nav />
       <Switch>
         <Route path="/missioncriticalassetprot" exact component={Home} />
-        <Route path="/contact" exact component={Contact} />
-        <Route path="/services" exact component={Services} />
-        <Route path="/fire-systems" exact component={FireSystems} />
-        <Route path="/water-systems" exact component={WaterSystems} />
+        <Route path="/missioncriticalassetprot/contact" exact component={Contact} />
+        <Route path="/missioncriticalassetprot/services" exact component={Services} />
+        <Route path="/missioncriticalassetprot/fire-systems" exact component={FireSystems} />
+        <Route path="/missioncriticalassetprot/water-systems" exact component={WaterSystems} />
       </Switch>
       <div id="footer">
         <Footer />
