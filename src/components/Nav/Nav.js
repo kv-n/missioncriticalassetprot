@@ -18,8 +18,8 @@ const Nav = () => {
                 <ul>
                     <li className="nav-dropdown-target">Systems
                         <ul className="nav-dropdown">
-                            <li><Link to="/fire-systems">Fire Systems</Link></li>
-                            <li><Link to="/water-systems">Water Systems</Link></li>
+                            <li><Link to="/fire-systems">Alarms</Link></li>
+                            <li><Link to="/water-systems">Suppression</Link></li>
                         </ul>
                     </li>
                     <li><Link to="/services">Services</Link></li>

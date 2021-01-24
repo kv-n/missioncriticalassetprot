@@ -6,7 +6,7 @@ const FireSystems = () => {
         <div className="fire-system">
             <div className="fire-system__banner">
                 <div className="fire-system__banner-text">
-                    <h1>Fire System</h1>
+                    <h1>Fire Alarm Systems</h1>
                 </div>
             </div>
             <div className="fire-system__body">

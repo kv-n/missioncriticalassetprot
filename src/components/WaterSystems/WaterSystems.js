@@ -14,7 +14,7 @@ const WaterSystems = () => {
         <div className="water-system">
             <div className="water-system__banner">
                 <div className="water-system__banner-text">
-                    <h1>Water System</h1>
+                    <h1>Supression Systems</h1>
                 </div>
             </div>
             <div className="water-system__body">
